@@ -1,0 +1,23 @@
+const [tiposReciclagem, ativarTiposReciclagem] = useState(false);
+
+const mostrarTiposReciclagem = (index) =>{
+    ativarTiposReciclagem(!tiposReciclagem);
+} 
+
+<div className="box_icones"> 
+        {
+        lista.map((item)=>(
+            <img className="icones" src={item} onClick={mostrarTiposReciclagem}></img>
+        ))
+        }
+</div>
+
+<div className={`tiposReciclagem ${tiposReciclagem ? 'open' : ''}`}>Teste</div>
+
+/* CSS */ 
+.tiposReciclagem{
+    display: none;
+}
+.tiposReciclagem.open{
+    display: flex;
+}
