@@ -55,16 +55,16 @@ function FrontEndVerde(){
         <div>
             <header>
                 <div className= "divnome">
-                    <img style={{width: '50px'}} src="./Front-End-Verde/src/assets/icon3.png"/>
+                    <img style={{width: '50px'}} src="./src/assets/icon3.png"/>
                     <div className="nome">Nome do Site</div>
                 </div>
 
                 <div>
-                    <img className ="filter-white" style={{width: "50px"}} src="./Front-End-Verde/src/assets/icon4.svg" onClick={mostrarSidebar}/>
+                    <img className ="filter-white" style={{width: "50px"}} src="./src/assets/icon4.svg" onClick={mostrarSidebar}/>
                 </div>
 
                 <div className={`barralateral ${barraLateral ? 'open' : ''}`}>
-                    <img className ="filter-white" style={{width: "45px"}} src="./Front-End-Verde/src/assets/close.svg" onClick={mostrarSidebar}/>
+                    <img className ="filter-white" style={{width: "45px"}} src="./src/assets/close.svg" onClick={mostrarSidebar}/>
                     <ul>
                     <li>Home</li>
                     <li>Buscador de Decarte</li>
@@ -91,7 +91,7 @@ function FrontEndVerde(){
             {mostrarCorpo ? (
             <div className="corpo">
                 <div className="titulo">
-                    <img id="rodar_reciclagem" style={{width: "50px"}} src="./Front-End-Verde/src/assets/icon2.png"/>
+                    <img id="rodar_reciclagem" style={{width: "50px"}} src="./src/assets/icon2.png"/>
                     <h1>APRENDA A RECICLAR</h1>
                 </div>
                 
@@ -104,10 +104,10 @@ function FrontEndVerde(){
                         <img className="imagens" src="./src/assets/Salgadinho.png"></img>   
                     </div>
                     <div className="box_imagens">
-                        <img className="imagens" src="./Front-End-Verde/src/assets/Garrafa.png" ></img>  
+                        <img className="imagens" src="./src/assets/Garrafa.png" ></img>  
                     </div>
                 </div>
-                <img id="scroll" className="filter-white" style={{width: "50px"}} href='#meuelemento' src="./Front-End-Verde/src/assets/arrow.svg" onClick={()=>{window.scroll({top: window.innerHeight})}}/>
+                <img id="scroll" className="filter-white" style={{width: "50px"}} href='#meuelemento' src="./src/assets/arrow.svg" onClick={()=>{window.scroll({top: window.innerHeight})}}/>
 
                 <div className="tipos_embalagem"> 
                     <h2>Clique no ícone que você encontrou em sua embalagem para saber mais.</h2>
