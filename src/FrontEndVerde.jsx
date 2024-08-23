@@ -101,7 +101,7 @@ function FrontEndVerde(){
 
                 <div className="png">
                     <div className="box_imagens">
-                        <img className="imagens" src="./Front-End-Verde/src/assets/Salgadinho.png"></img>   
+                        <img className="imagens" src="./src/assets/Salgadinho.png"></img>   
                     </div>
                     <div className="box_imagens">
                         <img className="imagens" src="./Front-End-Verde/src/assets/Garrafa.png" ></img>  
