@@ -9,7 +9,6 @@ import flecha from "/assets/arrow.svg"
 import fecha_esquerda from "/assets/left_arrow.svg"
 import reciclagem from "/assets/icon2.png"
 import reciclagem_plastico from "/assets/Reciclagem_Plastico.png"
-
 import tipo_rec_1 from "/assets/Rec_Plastico.png" 
 import tipo_rec_2 from "/assets/Rec_Tereftalato.png"
 import tipo_rec_3 from "/assets/Rec_Alta_Densidade.png"
