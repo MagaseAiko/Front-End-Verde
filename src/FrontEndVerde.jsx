@@ -55,16 +55,16 @@ function FrontEndVerde(){
         <div>
             <header>
                 <div className= "divnome">
-                    <img style={{width: '50px'}} src="./src/assets/icon3.png"/>
+                    <img style={{width: '50px'}} src="./Front-End-Verde/src/assets/icon3.png"/>
                     <div className="nome">Nome do Site</div>
                 </div>
 
                 <div>
-                    <img className ="filter-white" style={{width: "50px"}} src="./src/assets/icon4.svg" onClick={mostrarSidebar}/>
+                    <img className ="filter-white" style={{width: "50px"}} src="./Front-End-Verde/src/assets/icon4.svg" onClick={mostrarSidebar}/>
                 </div>
 
                 <div className={`barralateral ${barraLateral ? 'open' : ''}`}>
-                    <img className ="filter-white" style={{width: "45px"}} src="./src/assets/close.svg" onClick={mostrarSidebar}/>
+                    <img className ="filter-white" style={{width: "45px"}} src="./Front-End-Verde/src/assets/close.svg" onClick={mostrarSidebar}/>
                     <ul>
                     <li>Home</li>
                     <li>Buscador de Decarte</li>
