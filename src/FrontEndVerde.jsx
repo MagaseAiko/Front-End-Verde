@@ -142,7 +142,7 @@ function FrontEndVerde(){
                             <img className ="filter-white" style={{width: "45px"}} src={fecha_esquerda} onClick={voltarAoCorpo}/>
                         </div>
                         <div className="titulo">
-                            <img id="rodar_reciclagem" style={{width: "50px"}} src={barra_lateral}/>
+                            <img id="rodar_reciclagem" style={{width: "50px"}} src={reciclagem}/>
                             <h1>APRENDA A RECICLAR</h1>
                         </div> 
                     </div>
