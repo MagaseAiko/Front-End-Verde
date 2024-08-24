@@ -55,7 +55,7 @@ function FrontEndVerde(){
         <div>
             <header>
                 <div className= "divnome">
-                    <img style={{width: '50px'}} src="./Front-End-Verde/src/assets/icon3.png"/>
+                    <img style={{width: '50px'}} src="https://i.imgur.com/O29FS1l.png"/>
                     <div className="nome">Nome do Site</div>
                 </div>
 
