@@ -19,7 +19,6 @@ import tipo_rec_7 from "/assets/Rec_Poliestireno.png"
 import tipo_rec_8 from "/assets/Rec_Outros.png"
 
 function FrontEndVerde(){
-
     const [barraLateral, ativarBarraLateral] = useState(false);
     const [subMenu, ativarsubMenu] = useState(null);
     const [itemSelecionado, setItemSelecionado] = useState(null);
@@ -47,14 +46,36 @@ function FrontEndVerde(){
         setMostrarCorpo(true);
     };
 
-    const lista = [tipo_rec_1, tipo_rec_2, tipo_rec_3, tipo_rec_4, tipo_rec_5, tipo_rec_6, tipo_rec_7, tipo_rec_8
+    const lista = [
+        tipo_rec_1, 
+        tipo_rec_2, 
+        tipo_rec_3, 
+        tipo_rec_4, 
+        tipo_rec_5, 
+        tipo_rec_6, 
+        tipo_rec_7, 
+        tipo_rec_8
     ]
 
-    const nomes_reciclagem = ["♻ Reciclagem de Plástico:", "♻1 (PET) Polietileno tereftalato:", "♻2 (PEAD) Polietileno de Alta Densidade:", "♻3 (PVC) Cloreto de Polivinil:",
-                                "♻4 (PE) Polietileno de Baixa Densidade:", "♻5 (PP) Polipropileno:", "♻6 (PS) Poliestireno:", "♻7 Outros ou Material Não Rotulado:"
+    const nomes_reciclagem = [
+        '♻ Reciclagem de Plástico:', 
+        '♻1 (PET) Polietileno tereftalato:', 
+        '♻2 (PEAD) Polietileno de Alta Densidade:', 
+        '♻3 (PVC) Cloreto de Polivinil:',
+        '♻4 (PE) Polietileno de Baixa Densidade:', 
+        '♻5 (PP) Polipropileno:", "♻6 (PS) Poliestireno:', 
+        '♻7 Outros ou Material Não Rotulado:'
     ]
 
-    const ids = ["rec_0", "rec_1", "rec_2", "rec_3", "rec_4", "rec_5", "rec_6", "rec_7",
+    const ids = [
+        "rec_0", 
+        "rec_1", 
+        "rec_2", 
+        "rec_3", 
+        "rec_4", 
+        "rec_5", 
+        "rec_6", 
+        "rec_7",
     ]
 
     const descricoes = ["Os símbolos da reciclagem são encontrados normalmente na parte inferior da embalagem e possuem um triângulo com um número dentro.<br>Com os códigos na embalagem, é possível descobrir qual tipo de plástico foi usado em sua composição, e portanto, como ele deve ser reciclado.<br>Eles ajudam os centros de reciclagem a classificar e separar corretamente os produtos para o correto reaproveitamento. Isso porque, nem todos os centros de reciclagem são equipados para lidar com todos os tipos de plástico. Dessa forma, os códigos auxiliam o consumidor a saber quais recipientes devem ser entregues em determinados locais de coleta de resíduos e quais são mais indicados para armazenar alimentos.",
@@ -82,59 +103,60 @@ function FrontEndVerde(){
                 <div className={`barralateral ${barraLateral ? 'open' : ''}`}>
                     <img className ="filter-white" style={{width: "45px"}} src={fechar_barra_lateral} onClick={mostrarSidebar}/>
                     <ul>
-                    <li>Home</li>
-                    <li>Buscador de Decarte</li>
-                    <li onClick={() => mostrarSubMenu('about')}>
-                    Aprenda a Reciclar
-                    {subMenu === 'about' && (
-                    <ul className="submenu">
-                        <li onClick={voltarAoCorpo}>Página Inicial</li> 
-                        <li id="rec_0" onClick={() => mostrarTiposReciclagem(0)+mostrarSidebar()}>♻Reciclagem de Plástico</li>
-                        <li id="rec_1" onClick={() => mostrarTiposReciclagem(1)+mostrarSidebar()}>♻1 Polietileno Tereftalato</li>
-                        <li id="rec_2" onClick={() => mostrarTiposReciclagem(2)+mostrarSidebar()}>♻2 Polietileno de Alta Densidade</li>
-                        <li id="rec_3" onClick={() => mostrarTiposReciclagem(3)+mostrarSidebar()}>♻3 Policloreto de Vinila</li>
-                        <li id="rec_4" onClick={() => mostrarTiposReciclagem(4)+mostrarSidebar()}>♻4 Polietileno de Baixa Densidade</li>
-                        <li id="rec_5" onClick={() => mostrarTiposReciclagem(5)+mostrarSidebar()}>♻5 Polipropileno</li>
-                        <li id="rec_6" onClick={() => mostrarTiposReciclagem(6)+mostrarSidebar()}>♻6 Poliestireno</li>
-                        <li id="rec_7" onClick={() => mostrarTiposReciclagem(7)+mostrarSidebar()}>♻7 Outros</li>
-                    </ul>
-                    )}
-                    </li>
-                    <li>Sobre</li>
+                        <li>Home</li>
+                        <li>Buscador de Decarte</li>
+                        <li onClick={() => mostrarSubMenu('about')}>
+                        Aprenda a Reciclar
+                        {subMenu === 'about' && (
+                        <ul className="submenu">
+                            <li onClick={voltarAoCorpo}>Página Inicial</li> 
+                            <li id="rec_0" onClick={() => mostrarTiposReciclagem(0)+mostrarSidebar()}>♻Reciclagem de Plástico</li>
+                            <li id="rec_1" onClick={() => mostrarTiposReciclagem(1)+mostrarSidebar()}>♻1 Polietileno Tereftalato</li>
+                            <li id="rec_2" onClick={() => mostrarTiposReciclagem(2)+mostrarSidebar()}>♻2 Polietileno de Alta Densidade</li>
+                            <li id="rec_3" onClick={() => mostrarTiposReciclagem(3)+mostrarSidebar()}>♻3 Policloreto de Vinila</li>
+                            <li id="rec_4" onClick={() => mostrarTiposReciclagem(4)+mostrarSidebar()}>♻4 Polietileno de Baixa Densidade</li>
+                            <li id="rec_5" onClick={() => mostrarTiposReciclagem(5)+mostrarSidebar()}>♻5 Polipropileno</li>
+                            <li id="rec_6" onClick={() => mostrarTiposReciclagem(6)+mostrarSidebar()}>♻6 Poliestireno</li>
+                            <li id="rec_7" onClick={() => mostrarTiposReciclagem(7)+mostrarSidebar()}>♻7 Outros</li>
+                        </ul>
+                        )}
+                        </li>
+                        <li>Sobre</li>
                     </ul>
                 </div>
             </header>
+            
             {mostrarCorpo ? (
-            <div className="corpo">
-                <div className="titulo">
-                    <img id="rodar_reciclagem" style={{width: "50px"}} src={reciclagem}/>
-                    <h1>APRENDA A RECICLAR</h1>
-                </div>
+                <div className="corpo">
+                    <div className="titulo">
+                        <img id="rodar_reciclagem" style={{width: "50px"}} src={reciclagem}/>
+                        <h1>APRENDA A RECICLAR</h1>
+                    </div>
                 
-                <h2>Encontre o ícone de reciclagem no produto</h2>
+                    <h2>Encontre o ícone de reciclagem no produto</h2>
 
-                <div className="desc">Normalmente pode ser encontrado no verso da embalagem do produto</div>
+                    <div className="desc">Normalmente pode ser encontrado no verso da embalagem do produto</div>
 
-                <div className="png">
-                    <div className="box_imagens">
-                        <img className="imagens" src={salgadinho}></img>   
+                    <div className="png">
+                        <div className="box_imagens">
+                            <img className="imagens" src={salgadinho}></img>   
+                        </div>
+                        <div className="box_imagens">
+                            <img className="imagens" src={garrafa} ></img>  
+                        </div>
                     </div>
-                    <div className="box_imagens">
-                        <img className="imagens" src={garrafa} ></img>  
+                    <img id="scroll" className="filter-white" style={{width: "50px"}} href='#meuelemento' src={flecha} onClick={()=>{window.scroll({top: window.innerHeight})}}/>
+
+                    <div className="tipos_embalagem"> 
+                        <h2>Clique no ícone que você encontrou em sua embalagem para saber mais.</h2>
+                        <div className="box_icones">   
+                            {lista.map((item, index) => (
+                            <img key={index}className="icones" src={item} onClick={() => mostrarTiposReciclagem(index)} alt={`Ícone ${index}`}/>
+                            ))}
+                        </div>
                     </div>
                 </div>
-                <img id="scroll" className="filter-white" style={{width: "50px"}} href='#meuelemento' src={flecha} onClick={()=>{window.scroll({top: window.innerHeight})}}/>
-
-                <div className="tipos_embalagem"> 
-                    <h2>Clique no ícone que você encontrou em sua embalagem para saber mais.</h2>
-                    <div className="box_icones">   
-                    {lista.map((item, index) => (
-                    <img key={index}className="icones" src={item} onClick={() => mostrarTiposReciclagem(index)} alt={`Ícone ${index}`}/>
-                    ))}
-                    </div>
-                </div>
-            </div>
-            ) : (
+                ) : (
                 <div className={"tiposReciclagem open"}>
                     <div className="cabecalho">
                         <div className="voltar" onClick={voltarAoCorpo}>Voltar
@@ -143,8 +165,9 @@ function FrontEndVerde(){
                         <div className="titulo">
                             <img id="rodar_reciclagem" style={{width: "50px"}} src={reciclagem}/>
                             <h1>APRENDA A RECICLAR</h1>
-                        </div> 
+                        </div>
                     </div>
+
                     <div className="parte_inferior">
                         <div id={ids[itemSelecionado]} className="nome">{nomes_reciclagem[itemSelecionado]}</div>
                         <div className="explicação" dangerouslySetInnerHTML={{ __html: descricoes[itemSelecionado] }}></div>
