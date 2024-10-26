@@ -1,0 +1,321 @@
+.titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+#rodar_reciclagem {
+  animation: rotate 10s linear infinite;
+}
+
+.corpo {
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: url('/public/assets/Fundo.jpg');
+}
+
+.overlay {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(120deg, var(--cor-verde)  0%, var(--cor-verde1) 100%);
+  opacity: 0.9;
+  filter: brightness(0.5);
+  z-index: 1; 
+}
+
+.titulo, .desc, .png, .tipos_embalagem, h2, #scroll{
+  position: relative; 
+  z-index: 1; 
+}
+
+.voltar{
+  z-index: 2; 
+}
+
+#tituloh1 {
+  color: var(--cor-branca);
+  padding-left: 10px;
+  font-weight: 900;
+  font-size: 80px;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 40px;
+  color: var(--cor-branca);
+}
+
+.desc {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 25px;
+  color: var(--cor-branca);
+}
+.png {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 60%;
+  padding: 40px;
+  margin-top: 20px;
+}
+.box_imagens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20%;
+
+}
+.box_imagens img {
+  height: 05vw;
+  object-fit: cover;
+  width: 25vw;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  opacity: 0.9;
+}
+
+#scroll {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  animation: jumping 2s linear infinite;
+  cursor: pointer;
+}
+
+.tipos_embalagem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.box_icones {
+  padding: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.icones {
+  width: 1%;
+  flex: 1 1 10%;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  opacity: 0.9;
+  margin: 10px;
+  border-radius: 3%;
+  box-shadow: 5px 5px 10px var(--cor-preta);
+}
+
+.icones:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.icones2{
+  max-width: 11%;
+  flex: 1 1 1%;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  opacity: 0.9;
+  margin: 15px;
+  border-radius: 3%;
+  box-shadow: 5px 5px 10px var(--cor-preta);
+}
+
+.icones2:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+
+@keyframes jumping {
+  from {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.filter-inverter {
+  filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(100deg)
+    brightness(118%) contrast(100%);
+}
+
+.tiposReciclagem.open {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 1rem;
+  background-image: url('/public/assets/Fundo.jpg');
+}
+.local_descarte_img, .local_descarte, .descrição, .box_ilustrativa, .explicação, .nome, .tipos_plastico{
+  z-index: 1;
+}
+
+.local_descarte_img img{
+  border-radius: 10%;
+}
+.voltar {
+  width: 10%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--cor-branca);
+  font-size: 30px;
+  font-weight: 900;
+  cursor: pointer;
+}
+.cabecalho {
+  display: flex;
+}
+.cabecalho .titulo {
+  margin-top: 0px;
+  width: 100%;
+}
+
+.nome {
+  text-align: center;
+  font-weight: 600;
+  font-size: 45px;
+  color: var(--cor-branca);
+  text-shadow: 1px 1px 3px var(--cor-preta);
+}
+
+.explicação {
+  padding: 20px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+  color: var(--cor-branca);
+}
+
+.parte_inferior {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box_ilustrativa {
+  width: 60%;
+  margin-top: 20px;
+  padding: 40px;
+  background: var(--cor-azul);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px var(--cor-preta);
+}
+.tipo_lixo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+.descrição {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.local_descarte {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--cor-branca);
+}
+/* @media screen and (max-width: 900px) 
+{
+} */
+
+.flip-container {
+  perspective: 1000px;
+}
+
+.flipper {
+  height: 25vw;
+  width: 25vw;
+  transition: transform 1.2s ease-in-out;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cor-branca);
+  font-size: 18px;
+  overflow: hidden;
+}
+
+.front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0px 0px 3px var(--cor-preta)); /* Adiciona uma borda de sombra */
+}
+
+.front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.back {
+  background: linear-gradient(120deg, var(--cor-verde)  0%, var(--cor-verde1) 60%);
+  transform: rotateY(180deg);
+  filter: brightness(0.9);
+  box-shadow: 1px 1px 5px var(--cor-preta);
+  border-radius: 15px;
+  text-shadow: 2px 2px 5px var(--cor-preta);
+}
+
+.flip-container:hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.tipos_plastico{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

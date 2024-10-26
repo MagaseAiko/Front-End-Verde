@@ -1,0 +1,99 @@
+.barralateral {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 100%;
+  background-color: var(--cor-azul);
+  color: white;
+  position: fixed;
+  top: 0;
+  right: -1000px;
+  transition: left 0.3s;
+  text-align: start;
+  box-shadow: 1px 1px 10px var(--cor-preta);
+}
+
+.barralateral.open {
+  right: 0;
+}
+
+.barralateral ul {
+  font-size: 30px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.barralateral ul li {
+  padding: 15px;
+  border-bottom: 1px solid var(--cor-branca);
+  cursor: pointer;
+}
+
+.barralateral ul li a {
+  color: var(--color-font);
+}
+
+.barralateral ul li:hover,
+.barralateral ul li a:hover {
+  background-color: var(--cor-azul1);
+}
+
+.submenu {
+  margin-top: 10px;
+  border-radius: 10px;
+  padding-left: 20px;
+  background-color: var(--cor-azul);
+}
+
+.submenu li {
+  font-size: 20px;
+  padding: 10px;
+  border-bottom: 1px solid var(--cor-azul2);
+}
+
+#rec_nao-reciclavel {
+  color: var(--cor-nao-reciclavel);
+  text-shadow: 2px 2px 5px var(--cor-preta);
+}
+#rec_papel {
+  color: var(--cor-papel);
+  text-shadow: 2px 2px 5px var(--cor-preta);
+}
+#rec_metal {
+  color: var(--cor-metal);
+  text-shadow: 2px 2px 5px var(--cor-preta);
+}
+#rec_vidro {
+  color: var(--cor-vidro);
+  text-shadow: 2px 2px 5px var(--cor-preta);
+}
+#rec_organico {
+  color: var(--cor-organico);
+  text-shadow: 2px 2px 5px var(--cor-preta);
+}
+#rec_plastico {
+  color: var(--cor-plastico);
+  text-shadow: 2px 2px 5px var(--cor-preta);
+}
+#rec_PET {
+  color: var(--cor-rec-PET);
+}
+#rec_PEAD {
+  color: var(--cor-rec-PEAD);
+}
+#rec_PVC{
+  color: var(--cor-rec-PVC);
+}
+#rec_PEBD{
+  color: var(--cor-rec-PEBD);
+}
+#rec_PP{
+  color: var(--cor-rec-PP);
+}
+#rec_PS{
+  color: var(--cor-rec-PS);
+}
+#rec_O
+{
+  color: var(--cor-rec-O);
+}

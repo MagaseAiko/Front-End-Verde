@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --color-font: #fafafa;
+  --color-primary: #0ea5e9;
+  --color-primary-shadow: #075985;
+  --color-secondary: #22c55e;
+  --cor-azul: #072945;
+  --cor-azul1: #075985;
+  --cor-verde: #67cd6e;
+  --cor-verde1: #4f975c;
+  --cor-branca: white;
+  --cor-preta: black;
+
+  --cor-nao-reciclavel: #333333ef;
+  --cor-papel: #0044aadf;
+  --cor-metal: #ffcf06b9;
+  --cor-vidro: #008000bb;
+  --cor-organico: #552200d3;
+  --cor-plastico: #d40000ca;
+
+  --cor-rec-PET: #6f9054;
+  --cor-rec-PEAD: #596aa1;
+  --cor-rec-PVC: #498ca3;
+  --cor-rec-PEBD: #9d516e;
+  --cor-rec-PP: #a6484e;
+  --cor-rec-PS: #ba7155;
+  --cor-rec-O: #a88c4a;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  color: var(--color-font);
+  /*background-image: url(''); //Colocar o Background aqui? 
+    background-size: 100%;
+    background-position: right;
+    background-repeat: no-repeat;*/
+}
+
+button {
+  cursor: pointer;
+}
+
+*:disabled {
+  cursor: not-allowed;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+img {
+  max-width: 100%;
+}
