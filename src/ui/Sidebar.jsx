@@ -65,8 +65,20 @@ export default function Sidebar({
                   ♻ Orgânico
                 </li>
                 <li
-                  id="rec_plastico"
+                  id="rec_pilha"
                   onClick={() => mostrarTiposReciclagem(5) + mostrarSidebar()}
+                >
+                  ♻ Pilha
+                </li>
+                <li
+                  id="rec_eletronico"
+                  onClick={() => mostrarTiposReciclagem(6) + mostrarSidebar()}
+                >
+                  ♻ Lixo Eletrônico
+                </li>
+                <li
+                  id="rec_plastico"
+                  onClick={() => mostrarTiposReciclagem(7) + mostrarSidebar()}
                 >
                   ♻ Plástico
                 </li>

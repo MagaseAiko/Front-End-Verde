@@ -22,8 +22,8 @@ export default function AppLayout() {
   };
 
   const voltarAoCorpo = () => {
-    setItemSelecionado(itemSelecionado > 5 ? 5 : null);
-    if(itemSelecionado < 6)
+    setItemSelecionado(itemSelecionado > 7 ? 7 : null);
+    if(itemSelecionado < 8)
     {
       setMostrarCorpo(true);
     }
